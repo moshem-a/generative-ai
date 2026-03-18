@@ -9,7 +9,7 @@ RED='\033[0;31m'
 NC='\033[0m' # No Color
 
 # Absolute path to gcloud found on system
-GCLOUD_BIN="/Users/moshem/gcloud --version/google-cloud-sdk/bin/gcloud"
+GCLOUD_BIN=$(command -v gcloud || echo "gcloud")
 
 echo "------------------------------------------------"
 echo -e "${BLUE}🚀 Starting GenAI Video Evaluator Deployment to Cloud Run...${NC}"

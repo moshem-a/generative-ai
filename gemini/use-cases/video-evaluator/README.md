@@ -50,8 +50,9 @@ High-fidelity quality assurance for AI-generated video. Multi-agent evaluation p
 ## Documentation
 
 For a deep dive into the architecture and ADK agent logic, see:
-- [Deep Technical Documentation](file:///Users/moshem/.gemini/jetski/brain/a377be24-be7d-43cc-b30e-e34805f070df/deep_technical_documentation.md)
-- [Project Documentation (HTML)](file:///Users/moshem/code/reality-check-engine-main%202/documentation.html)
+- [Developer Guide (HTML)](./developer_guide.html)
+- [AI Engineering & Prompt Architecture](./ai_engineering_guide.html)
+- [Project Documentation (HTML)](./documentation.html)
 
 ## License
 

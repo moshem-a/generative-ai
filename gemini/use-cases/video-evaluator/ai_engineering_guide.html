@@ -133,6 +133,29 @@
             <h2>2. The Multi-Agent Paradigm</h2>
             <span class="badge">Architectural Decision</span>
             <p>Evaluating generative video is a high-density cognitive task. When a single foundation model (even with 1M+ context) is tasked with "finding all bugs," it suffers from **Attention Dilution**—focusing on stylistic flair instead of physical anomalies.</p>
+            
+            <div class="mermaid">
+                graph TD
+                    A[Video Input] --> B[Frame Extractor]
+                    B --> C[ADK Agent Mesh]
+                    subgraph "ADK Agents (Gemini 3.1 Pro)"
+                        C1[Physics Auditor]
+                        C2[Object Permanence Indexer]
+                        C3[Temporal Consistency Tracker]
+                        C --> C1
+                        C --> C2
+                        C --> C3
+                    end
+                    C1 --> D[Issue Aggregator]
+                    C2 --> D
+                    C3 --> D
+                    D -- "Flags detected" --> G[Remediation Engine]
+                    G --> H[Prompt Vector Transformation]
+                    H --> I[Veo 3.1 Regeneration]
+                    I --> A
+                    D -- "No issues" --> F[Final Render Verified]
+            </div>
+
             <p>Our architecture isolates reasoning into parallel, specialized micro-models:</p>
             <ul>
                 <li><strong>Object Permanence Indexer</strong>: Anchors bounding-box consistency in the model weights.</li>
