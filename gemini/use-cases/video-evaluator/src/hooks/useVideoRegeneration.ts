@@ -3,7 +3,7 @@ import { Flag, AgentResult, AnalysisResult } from '@/lib/types';
 import { runAgent, computeCoherenceScore } from '@/lib/gemini';
 import { getStoredAgentConfigs } from '@/lib/agent-storage';
 import { generateVideoWithVeo, VeoModelKey } from '@/lib/veo';
-import { extractFrames } from '@/lib/video-utils';
+import { extractFrames, extractSpecificFrames } from '@/lib/video-utils';
 
 export interface VideoVersion {
   id: string;
@@ -37,11 +37,12 @@ export function useVideoRegeneration() {
       durationSeconds: number;
       aspectRatio: '16:9' | '9:16' | '1:1';
       includeAudio: boolean;
+      inputImageBase64?: string;
       strategy?: 'creative' | 'similarity';
       originalVideoUrl?: string;
     }
   ) => {
-    const { prompt, model, durationSeconds, aspectRatio, includeAudio, strategy = 'creative', originalVideoUrl } = options;
+    const { prompt, model, durationSeconds, aspectRatio, includeAudio, inputImageBase64, strategy = 'creative', originalVideoUrl } = options;
     setRegeneration(prev => ({
       ...prev,
       status: 'generating',
@@ -53,13 +54,15 @@ export function useVideoRegeneration() {
 
       // Extract reference frames if similarity strategy is chosen
       if (strategy === 'similarity' && originalVideoUrl) {
-        setRegeneration(prev => ({ ...prev, statusMessage: 'Extracting style references from original video...' }));
+        setRegeneration(prev => ({ ...prev, statusMessage: 'Extracting reference frames from original video...' }));
         try {
           const response = await fetch(originalVideoUrl);
           const blob = await response.blob();
           const file = new File([blob], 'reference.mp4', { type: 'video/mp4' });
-          // Extract 3 reference frames (start, middle, end)
-          const { frames } = await extractFrames(file, 3);
+          
+          // Extract specific frames: First, Middle, and near-End frames (Up to 3 for Veo 3.x)
+          const timestamps = [0, originalDuration / 2, Math.max(0, originalDuration - 0.5)];
+          const { frames } = await extractSpecificFrames(file, timestamps);
           referenceImages = frames;
         } catch (err) {
           console.warn('Failed to extract reference frames, falling back to creative mode:', err);
@@ -73,6 +76,7 @@ export function useVideoRegeneration() {
         aspectRatio,
         durationSeconds,
         includeAudio,
+        inputImageBase64,
         referenceImages,
         onStatusUpdate: (statusMessage) => {
           setRegeneration(prev => ({ ...prev, statusMessage }));
