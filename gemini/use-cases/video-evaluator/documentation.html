@@ -1,9 +1,25 @@
+<!--
+ Copyright 2025 Google LLC
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     https://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GenAI Video Evaluator — Documentation</title>
+    <title>Generative AI Video Evaluator — Documentation</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -162,7 +178,7 @@
 </head>
 <body>
     <aside>
-        <h1>GenAI</h1>
+        <h1>Generative AI</h1>
         <nav>
             <ul>
                 <li><a href="#overview">1. Overview</a></li>
@@ -181,14 +197,14 @@
             <h1>Reality Check Engine</h1>
             <p>Reality Check Engine Project Documentation</p>
             <div class="alert">
-                The GenAI Video Evaluator is a high-fidelity quality assurance engine for AI-generated video. It uses a multi-agent critique model (ADK Agents) to detect physical impossibilities, object permanence violations, and environmental drift.
+                The Generative AI Video Evaluator is a high-fidelity quality assurance engine for AI-generated video. It uses a multi-agent critique model (ADK Agents) to detect physical impossibilities, object permanence violations, and environmental drift.
             </div>
             <h2>Introduction</h2>
             <p>
                 As AI video generation (Sora, Veo, Kling) becomes more prevalent, the bottleneck has shifted from "creation" to "evaluation." Current AI models frequently suffer from "hallucinations"—subtle errors in physics, anatomy, and temporal continuity that the human eye often misses at first glance.
             </p>
             <p>
-                The GenAI Video Evaluator automates this inspection process. It doesn't just "watch" a video; it breaks it into constituent frames, analyzes them semantically using distributed ADK agents, and benchmarks the results against ground truth data to ensure maximum reliability.
+                The Generative AI Video Evaluator automates this inspection process. It doesn't just "watch" a video; it breaks it into constituent frames, analyzes them semantically using distributed ADK agents, and benchmarks the results against ground truth data to ensure maximum reliability.
             </p>
         </section>
 
@@ -269,7 +285,7 @@
 
         <section id="remediation">
             <h2>Remediation & Regeneration</h2>
-            <p>Detecting issues is only half the battle. The GenAI Video Evaluator helps users *fix* the videos automatically through <strong>Closed-Loop Prompt Remediation</strong>.</p>
+            <p>Detecting issues is only half the battle. The Generative AI Video Evaluator helps users *fix* the videos automatically through <strong>Closed-Loop Prompt Remediation</strong>.</p>
 
             <h3>Strategy Recommendation</h3>
             <p>Based on problem "density," the system suggests a strategy:</p>
@@ -340,7 +356,7 @@ gcloud run deploy genai-video-eval \
     </main>
 
     <footer style="margin-top: 4rem; padding: 2rem; text-align: center; border-top: 1px solid var(--border); color: var(--text-muted); font-size: 0.8rem;">
-        &copy; 2026 GenAI Video Evaluator
+        &copy; 2026 Generative AI Video Evaluator
     </footer>
 </body>
 </html>

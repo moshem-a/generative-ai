@@ -1,6 +1,6 @@
 # The "Hallucination Gap": Why Every AI Video Generator Needs an Automated Judge
 
-**By GenAI Video Evaluator Team**
+**By Generative AI Video Evaluator Team**
 
 In the last 12 months, we’ve witnessed a Cambrian explosion of AI video generation. Models like **Google Veo 3.1**, Sora, and Kling have moved us from blurry, surrealist dreams to high-fidelity photorealism. But there is a persistent, frustrating bottleneck that every creator and developer faces: **The Hallucination Gap.**
 
@@ -20,7 +20,7 @@ Currently, the only solution is **Manual Quality Control (QC)**: a human sitting
 
 ### The Solution: The ADK Multi-Agent Shield
 
-We built the **GenAI Video Evaluator** to automate this inspection process. Instead of asking one model to "find mistakes," we’ve deployed a specialized, **multi-agent ADK (Agentic Document Knowledge) architecture** powered by **Gemini 3.1 Pro**.
+We built the **Generative AI Video Evaluator** to automate this inspection process. Instead of asking one model to "find mistakes," we’ve deployed a specialized, **multi-agent ADK (Agentic Document Knowledge) architecture** powered by **Gemini 3.1 Pro**.
 
 By splitting the "Judge" into three distinct roles, we achieve human-level observation:
 
@@ -35,7 +35,7 @@ Unlike standard AI assistants that want to be "helpful," our agents are engineer
 
 ### Closing the Loop: The Autonomous Auto-Evaluator
 
-Detecting a bug is only half the battle. The **GenAI Video Evaluator** is an automated loop. When an agent identifies a critical issue—say, a "Hand clipping through table at 00:03"—the system triggers a **Prompt-to-Prompt Remediation**.
+Detecting a bug is only half the battle. The **Generative AI Video Evaluator** is an automated loop. When an agent identifies a critical issue—say, a "Hand clipping through table at 00:03"—the system triggers a **Prompt-to-Prompt Remediation**.
 
 1.  **Critique Analysis**: Gemini 3.1 Pro analyzes the "Origin Prompt" and the "Visual Flags." 
 2.  **Constraint Injection**: The system automatically synthesizes a high-density, corrective prompt. It doesn't just say "fix it"; it says: *"Regenerate the scene ensuring the hand maintained physical contact with the table surface without clipping."*
@@ -60,4 +60,4 @@ By using AI to critique and correct AI, we aren't just making "better videos"—
 
 ---
 
-*The GenAI Video Evaluator is an open architecture for high-fidelity video QA. Join us as we bridge the Hallucination Gap.*
+*The Generative AI Video Evaluator is an open architecture for high-fidelity video QA. Join us as we bridge the Hallucination Gap.*

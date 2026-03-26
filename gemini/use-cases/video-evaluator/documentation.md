@@ -1,9 +1,9 @@
-# GenAI Video Evaluator Documentation
+# Generative AI Video Evaluator Documentation
 
 **System Version**: 1.3.0  
 
 ## 1. Overview
-The **GenAI Video Evaluator** is a high-fidelity quality assurance platform for AI-generated video. It addresses the "hallucination" gap in modern video generation models (Veo, Sora, Kling) by automating the detection of physical, anatomical, and temporal inconsistencies using specialized **ADK Evaluator Agents**.
+The **Generative AI Video Evaluator** is a high-fidelity quality assurance platform for AI-generated video. It addresses the "hallucination" gap in modern video generation models (Veo, Sora, Kling) by automating the detection of physical, anatomical, and temporal inconsistencies using specialized **ADK Evaluator Agents**.
 
 ---
 
@@ -58,4 +58,4 @@ When the system detects a visual error (e.g., identity drift), it analyzes the o
 
 ---
 
-*Copyright © 2026 GenAI Video Evaluator.*
+*Copyright © 2026 Generative AI Video Evaluator.*

@@ -1,13 +1,13 @@
 # Bridging the Hallucination Gap: Closed-Loop Multi-Agent Evaluation for Generative Video
 
-**By the GenAI Video Evaluator Team**
+**By the Generative AI Video Evaluator Team**
 
 ---
 
 ## 1. Abstract: The High-Fidelity Horizon
 As Google Cloud’s video-generation frontier expands with **Veo 3.1**, we are witnessing an unprecedented transition from "novelty visuals" to "industrial assets." However, even with massive multi-modal transformers, the challenge of **Temporal Hallucinations** remains. A single frame of "melting hands" or a background that drifts in color temperature can invalidate a $50,000 commercial workflow.
 
-The **GenAI Video Evaluator** is an autonomous, serverless solution designed to bridge this "Hallucination Gap." By deploying a specialized multi-agent auditor using **Gemini 3.1 Pro**, we shift from human-in-the-loop QC to an automated, self-healing remediation loop.
+The **Generative AI Video Evaluator** is an autonomous, serverless solution designed to bridge this "Hallucination Gap." By deploying a specialized multi-agent auditor using **Gemini 3.1 Pro**, we shift from human-in-the-loop QC to an automated, self-healing remediation loop.
 
 ## Structural Logic Flow
 ```mermaid
@@ -36,7 +36,7 @@ graph TD
 ---
 
 ### Visual Interface: The Evaluation Dashboard
-![GenAI Video Evaluator Dashboard](/Users/moshem/.gemini/jetski/brain/a377be24-be7d-43cc-b30e-e34805f070df/dashboard_ui_screenshot_1773843883962.png)
+![Generative AI Video Evaluator Dashboard](/Users/moshem/.gemini/jetski/brain/a377be24-be7d-43cc-b30e-e34805f070df/dashboard_ui_screenshot_1773843883962.png)
 
 ## 2. The Architecture of Professional Suspicion
 Most foundation models suffer from **Agreeable Response Syndrome**—they are trained to be helpful, often overlooking subtle physical anomalies. Our solution implements a **"Negative Bias"** prompt architecture:
@@ -77,9 +77,9 @@ To maintain high throughput on Cloud Run, the system uses a sophisticated **Clie
 ---
 
 ## 5. Conclusion: Towards Verified Vision
-The **GenAI Video Evaluator** is more than a QC tool; it is a **Prompt-to-Prompt Optimizer**. It proves that by using the multimodal reasoning power of **Gemini 3.1 Pro** to audit the generative creativity of **Veo 3.1**, we can create a self-correcting engine that delivers production-grade video at scale.
+The **Generative AI Video Evaluator** is more than a QC tool; it is a **Prompt-to-Prompt Optimizer**. It proves that by using the multimodal reasoning power of **Gemini 3.1 Pro** to audit the generative creativity of **Veo 3.1**, we can create a self-correcting engine that delivers production-grade video at scale.
 
-For engineers looking to harden their GenAI workflows, this project demonstrates the blueprint for **Autonomous Asset Validation**.
+For engineers looking to harden their Generative AI workflows, this project demonstrates the blueprint for **Autonomous Asset Validation**.
 
 ### Example: Before & After Remediation
 | Feature | Original Output | Remediation Phase | Corrected Output |

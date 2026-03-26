@@ -1,8 +1,22 @@
 #!/bin/bash
+# Copyright 2025 Google LLC
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     https://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
 
-# GenAI Video Evaluator Local Deployment Helper
+
+# Generative AI Video Evaluator Local Deployment Helper
 echo "------------------------------------------------"
-echo "🛡️ GenAI Video Evaluator Local Deployment Starter"
+echo "🛡️ Generative AI Video Evaluator Local Deployment Starter"
 echo "------------------------------------------------"
 
 # Check for Docker
@@ -23,10 +37,10 @@ if ! docker compose version > /dev/null 2>&1; then
 fi
 
 # Build and start the container
-echo "🏗️ Building and starting GenAI Video Evaluator using $DOCKER_CMD..."
+echo "🏗️ Building and starting Generative AI Video Evaluator using $DOCKER_CMD..."
 if $DOCKER_CMD up --build -d; then
   echo "------------------------------------------------"
-  echo "✅ GenAI Video Evaluator is running locally!"
+  echo "✅ Generative AI Video Evaluator is running locally!"
   echo "📍 Access the dashboard at: http://localhost:3000"
   echo "⚙️ Configure your API key via the settings icon."
   echo "------------------------------------------------"

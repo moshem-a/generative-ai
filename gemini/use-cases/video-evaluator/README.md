@@ -69,5 +69,10 @@ Follow these steps to deploy the auditor on your machine:
 - **Styling**: TailwindCSS + Framer Motion
 - **Deployment**: Google Cloud Run (Docker-based)
 
+
 ---
+
+## Disclaimer
+
+This repository itself is not an officially supported Google product. The code in this repository is for demonstrative purposes only.
 
