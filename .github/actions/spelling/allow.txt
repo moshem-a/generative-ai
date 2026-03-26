@@ -222,6 +222,7 @@ CLOUDSDK
 cloudveil
 clsx
 cmap
+cmdk
 cmn
 cnf
 COCOAPODS
@@ -628,6 +629,7 @@ historien
 Hlc
 Hmmm
 HMO
+hmr
 hnsw
 Hogwarts
 Homesley
@@ -882,6 +884,7 @@ maskmode
 mathvista
 mavenrc
 maxcold
+Mazuz
 Mbappe
 mbp
 mbsdk
@@ -946,6 +949,7 @@ mpegps
 mpga
 mpld
 mpn
+mql
 mrag
 mrr
 mrtydi
@@ -1074,6 +1078,8 @@ osm
 oss
 osx
 otlp
+OTP
+otp
 outdir
 outro
 overwiew
@@ -1407,6 +1413,8 @@ subviews
 subword
 suis
 sunner
+SUPABASE
+supabase
 supima
 suptitle
 Surampudi
@@ -1474,6 +1482,7 @@ tion
 titlebar
 TLDR
 TMP
+TName
 tobytes
 tok
 TOKENLIST
@@ -1564,6 +1573,7 @@ VAPO
 vapo
 Vardhan
 Vaswani
+vaul
 Vayots
 VBG
 vcodec
