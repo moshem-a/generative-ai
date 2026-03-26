@@ -5,7 +5,7 @@
 ---
 
 ## 1. Abstract: The High-Fidelity Horizon
-As Google Cloud’s video-generation frontier expands with **Veo 3.1**, we are witnessing an unprecedented transition from "novelty visuals" to "industrial assets." However, even with massive multi-modal transformers, the challenge of **Temporal Hallucinations** remains. A single frame of "melting hands" or a background that drifts in color temperature can invalidate a $50,000 commercial workflow.
+As Google Cloud's video-generation frontier expands with **Veo 3.1**, we are witnessing an unprecedented transition from "novelty visuals" to "industrial assets." However, even with massive multi-modal transformers, the challenge of **Temporal Hallucinations** remains. A single frame of "melting hands" or a background that drifts in color temperature can invalidate a $50,000 commercial workflow.
 
 The **Generative AI Video Evaluator** is an autonomous, serverless solution designed to bridge this "Hallucination Gap." By deploying a specialized multi-agent auditor using **Gemini 3.1 Pro**, we shift from human-in-the-loop QC to an automated, self-healing remediation loop.
 

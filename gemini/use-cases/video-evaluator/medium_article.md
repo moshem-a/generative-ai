@@ -2,9 +2,9 @@
 
 **By Generative AI Video Evaluator Team**
 
-In the last 12 months, we’ve witnessed a Cambrian explosion of AI video generation. Models like **Google Veo 3.1**, Sora, and Kling have moved us from blurry, surrealist dreams to high-fidelity photorealism. But there is a persistent, frustrating bottleneck that every creator and developer faces: **The Hallucination Gap.**
+In the last 12 months, we've witnessed a Cambrian explosion of AI video generation. Models like **Google Veo 3.1**, Sora, and Kling have moved us from blurry, surrealist dreams to high-fidelity photorealism. But there is a persistent, frustrating bottleneck that every creator and developer faces: **The Hallucination Gap.**
 
-We’ve all seen it. A stunning 4K generation of a person walking through a park where, suddenly, their shirt changes color, their legs clip through the grass, or—most famously—objects simply vanish when occluded. These aren’t just "bugs"; they are fundamental challenges in temporal consistency and physical reasoning.
+We've all seen it. A stunning 4K generation of a person walking through a park where, suddenly, their shirt changes color, their legs clip through the grass, or—most famously—objects simply vanish when occluded. These aren't just "bugs"; they are fundamental challenges in temporal consistency and physical reasoning.
 
 As "Creation" becomes a solved problem, the frontier has moved to **Evaluation**.
 
@@ -20,7 +20,7 @@ Currently, the only solution is **Manual Quality Control (QC)**: a human sitting
 
 ### The Solution: The ADK Multi-Agent Shield
 
-We built the **Generative AI Video Evaluator** to automate this inspection process. Instead of asking one model to "find mistakes," we’ve deployed a specialized, **multi-agent ADK (Agentic Document Knowledge) architecture** powered by **Gemini 3.1 Pro**.
+We built the **Generative AI Video Evaluator** to automate this inspection process. Instead of asking one model to "find mistakes," we've deployed a specialized, **multi-agent ADK (Agentic Document Knowledge) architecture** powered by **Gemini 3.1 Pro**.
 
 By splitting the "Judge" into three distinct roles, we achieve human-level observation:
 
