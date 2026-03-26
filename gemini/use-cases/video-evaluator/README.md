@@ -8,7 +8,7 @@
 
 Foundation models generate pixels, not physics. Commercial video projects currently suffer from high "re-roll" costs due to semantic hallucinations—melting appendages, lighting flicker, and background morphing. 
 
-**Reality Check Engine** is a closed-loop system where specialized auditors (**Gemini 3.1 Pro**) critique the artist (**Veo 3.1**). It translates visual failures into quantitative prompt corrections, automating the QC loop and fixing errors in-flight.
+**Reality Check Engine** is a closed-loop system where specialized auditors (**Gemini 1.5 Pro**) critique the artist (**Google Veo**). It translates visual failures into quantitative prompt corrections, automating the QC loop and fixing errors in-flight.
 
 ---
 
@@ -23,7 +23,7 @@ The engine implements a multi-agent "Forensic Audit" mesh that evaluates video f
 
 ## ✨ Key Features
 
-- **Multi-Agent Forensic Audit**: Categorized evaluation (Physics, Lighting, Morphology) using Gemini 3.1 Pro.
+- **Multi-Agent Forensic Audit**: Categorized evaluation (Physics, Lighting, Morphology) using Gemini 1.5 Pro.
 - **Continuity Mode (Similarity Fix)**: Uses first, middle, and end frames as anchor assets to ensure regenerated videos stick to the original camera angle and subject.
 - **Ephemeral Security**: API keys are session-based (`sessionStorage`) and auto-expire after 1 hour, ensuring no sensitive data is saved permanently.
 - **Real-time Visualization**: Interactive dashboard showing coherence scores and time-coded alerts.
@@ -65,7 +65,7 @@ Follow these steps to deploy the auditor on your machine:
 ## 🛡️ Technology Stack
 
 - **Core**: React + TypeScript + Vite
-- **AI Models**: Gemini 3.1 Pro (Audit), Google Veo 3.1 (Regeneration)
+- **AI Models**: Gemini 1.5 Pro (Audit), Google Veo (Regeneration)
 - **Styling**: TailwindCSS + Framer Motion
 - **Deployment**: Google Cloud Run (Docker-based)
 

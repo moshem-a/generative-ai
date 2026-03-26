@@ -322,13 +322,13 @@
                 </div>
                 <div class="pillar-card" style="border-left-color: var(--google-yellow);">
                     <h2>The Solution: ADK Agent Auditor</h2>
-                    <p>A closed-loop system where specialized auditors (Gemini 3.1 Pro) critique the artist (Veo 3.1). It translates visual failures into quantitative prompt corrections, automating the QC loop and fixing errors in-flight.</p>
+                    <p>A closed-loop system where specialized auditors (Gemini 1.5 Pro) critique the artist (Google Veo). It translates visual failures into quantitative prompt corrections, automating the QC loop and fixing errors in-flight.</p>
                 </div>
                 <div class="pillar-card" style="border-left-color: var(--google-blue);">
                     <h2>Technology Strategy</h2>
                     <div class="tech-stack-row">
-                        <span class="tech-pill">Gemini 3.1 Pro</span>
-                        <span class="tech-pill">Google Veo 3.1</span>
+                        <span class="tech-pill">Gemini 1.5 Pro</span>
+                        <span class="tech-pill">Google Veo</span>
                         <span class="tech-pill">Vertex AI</span>
                         <span class="tech-pill">Vite</span>
                         <span class="tech-pill">Canvas API</span>
@@ -348,7 +348,7 @@
                         Video[Video In] --> Agents[3x Auditor Agents]
                         Agents --> Scoring[Issue Timeline]
                         Scoring --> Remediation[Prompt Correction]
-                        Remediation --> Veo[Veo 3.1 Regeneration]
+                        Remediation --> Veo[Veo Regeneration]
                         Veo --> Video
                         style Video fill:#e8f0fe,stroke:#1a73e8
                         style Veo fill:#e6f4ea,stroke:#34a853
@@ -381,7 +381,7 @@
                 <div class="step-node"><div class="step-circle" style="background:#4285F4">1</div><div class="step-line"></div></div>
                 <div class="step-content">
                     <h3>Multi-Agent Node Setup</h3>
-                    <p>Deploy specialized Gemini 3.1 agents (Physics, Permanence, Temporal) configured with "Negative Bias" prompting to maximize error detection sensitivity.</p>
+                    <p>Deploy specialized Gemini 1.5 agents (Physics, Permanence, Temporal) configured with "Negative Bias" prompting to maximize error detection sensitivity.</p>
                 </div>
             </div>
             <div class="step-row">
@@ -409,7 +409,7 @@
                 <div class="step-node"><div class="step-circle" style="background:#4285F4">5</div></div>
                 <div class="step-content">
                     <h3>Auto-Regeneration</h3>
-                    <p>Triggering Google Veo 3.1 with the repaired prompt vector to deliver production-grade assets with 90% less human intervention.</p>
+                    <p>Triggering Google Veo with the repaired prompt vector to deliver production-grade assets with 90% less human intervention.</p>
                 </div>
             </div>
         </div>

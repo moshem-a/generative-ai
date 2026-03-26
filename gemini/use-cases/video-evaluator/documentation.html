@@ -238,9 +238,9 @@
                 <div class="card">
                     <h4>Intelligence APIs</h4>
                     <ul>
-                        <li>Gemini 3.1 Pro (Primary AI)</li>
+                        <li>Gemini 1.5 Pro (Primary AI)</li>
                         <li>Gemini 2.5 Flash (Fast Eval)</li>
-                        <li>Vertex AI (Google Veo 3.1)</li>
+                        <li>Vertex AI (Google Veo)</li>
                     </ul>
                 </div>
             </div>
@@ -269,7 +269,7 @@
 
             <div class="card" style="margin-bottom: 1rem;">
                 <span class="tag">OBJ</span> <strong>Object Permanence Agent</strong>
-                <p>Tracks identity drift via <strong>Negative Bias</strong> prompting. Powered by <strong>Gemini 3.1 Pro</strong>, it identifies the exact <strong>start and end times</strong> of facial morphing or cloth pattern changes.</p>
+                <p>Tracks identity drift via <strong>Negative Bias</strong> prompting. Powered by <strong>Gemini 1.5 Pro</strong>, it identifies the exact <strong>start and end times</strong> of facial morphing or cloth pattern changes.</p>
             </div>
 
             <div class="card" style="margin-bottom: 1rem;">
@@ -298,8 +298,8 @@
             <p>When "Regenerate" is chosen, the engine performs the following:</p>
             <ol>
                 <li><strong>Prompt Analysis:</strong> Gemini analyzes the failed original prompt + the detected flags.</li>
-                <li><strong>Prompt-to-Prompt Optimization:</strong> <strong>Gemini 3.1 Pro</strong> analyzes the original failure + the flags to generate a "Corrective Prompt" that explicitly instructs the model to avoid past failures.</li>
-                <li><strong>Generation:</strong> The new prompt is sent to Google's Veo 3.1 model via Vertex AI.</li>
+                <li><strong>Prompt-to-Prompt Optimization:</strong> <strong>Gemini 1.5 Pro</strong> analyzes the original failure + the flags to generate a "Corrective Prompt" that explicitly instructs the model to avoid past failures.</li>
+                <li><strong>Generation:</strong> The new prompt is sent to Google's Veo model via Vertex AI.</li>
                 <li><strong>Verification:</strong> The new video is automatically re-evaluated by the same agents to ensure a "Clean Pass."</li>
             </ol>
         </section>

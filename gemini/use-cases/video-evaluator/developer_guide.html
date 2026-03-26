@@ -166,7 +166,7 @@
             <h1>Developer Onboarding</h1>
             <p>Welcome to the <strong>Generative AI Video Evaluator</strong> codebase. This project is built as a High-Fidelity Analyzer capable of detecting subtle anomalies in AI-generated videos. It bridges the gap between generation models and production standards.</p>
             <div class="alert">
-                <strong>Primary Engine</strong>: The core logic runs client-side via React, orchestrating parallel streams to the <strong>Gemini 3.1 Pro</strong> endpoint for visual auditing.
+                <strong>Primary Engine</strong>: The core logic runs client-side via React, orchestrating parallel streams to the <strong>Gemini 1.5 Pro</strong> endpoint for visual auditing.
             </div>
         </section>
 
@@ -186,7 +186,7 @@ src/<br>
 │   ├── agents.ts        <span style="color:#71717a">// System Prompts & Tool Schemas for Gemini</span><br>
 │   ├── gemini.ts        <span style="color:#71717a">// Gemini API Client & Rate-Limit Backoff</span><br>
 │   ├── remediation.ts   <span style="color:#71717a">// Prompt-to-Prompt Generator</span><br>
-│   ├── veo.ts           <span style="color:#71717a">// Vertex AI Veo 3.1 long-running task handler</span><br>
+│   ├── veo.ts           <span style="color:#71717a">// Vertex AI Veo long-running task handler</span><br>
 │   └── video-utils.ts   <span style="color:#71717a">// Canvas-based frame extraction</span><br>
 └── pages/<br>
     └── Index.tsx        <span style="color:#71717a">// Main Dashboard View containing all modular wrappers</span>
@@ -226,7 +226,7 @@ src/<br>
                     Orch -->|Fork Async| A3[Temporal Agent]
                     
                     subgraph "gemini.ts"
-                        A1 -->|POST request| Gem[Gemini 3.1 Pro]
+                        A1 -->|POST request| Gem[Gemini 1.5 Pro]
                         A2 -->|POST request| Gem
                         A3 -->|POST request| Gem
                         Gem -->|Tool Call| Resp[JSON Structure]

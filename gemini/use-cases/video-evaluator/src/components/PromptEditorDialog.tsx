@@ -45,7 +45,7 @@ export function PromptEditorDialog({
   onOpenChange,
   initialPrompt,
   initialDuration,
-  initialModel = 'veo-3.1',
+  initialModel = 'veo-2.0',
   onRegenerate,
   isGenerating
 }: PromptEditorDialogProps) {
@@ -185,9 +185,8 @@ export function PromptEditorDialog({
                   <SelectValue />
                 </SelectTrigger>
                 <SelectContent>
-                  <SelectItem value="veo-3.0">Veo 3.0 (Balanced)</SelectItem>
-                  <SelectItem value="veo-3.1">Veo 3.1 (Preview)</SelectItem>
-                  <SelectItem value="veo-2.0">Veo 2.0 (Stable)</SelectItem>
+                  <SelectItem value="veo-2.0">Veo 2.0 (Preview)</SelectItem>
+                  <SelectItem value="veo-1.0">Veo 1.0 (Stable)</SelectItem>
                 </SelectContent>
               </Select>
             </div>

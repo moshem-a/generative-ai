@@ -2,7 +2,7 @@
 
 **By Generative AI Video Evaluator Team**
 
-In the last 12 months, we've witnessed a Cambrian explosion of AI video generation. Models like **Google Veo 3.1**, Sora, and Kling have moved us from blurry, surrealist dreams to high-fidelity photorealism. But there is a persistent, frustrating bottleneck that every creator and developer faces: **The Hallucination Gap.**
+In the last 12 months, we've witnessed a Cambrian explosion of AI video generation. Models like **Google Veo**, Sora, and Kling have moved us from blurry, surrealist dreams to high-fidelity photorealism. But there is a persistent, frustrating bottleneck that every creator and developer faces: **The Hallucination Gap.**
 
 We've all seen it. A stunning 4K generation of a person walking through a park where, suddenly, their shirt changes color, their legs clip through the grass, or—most famously—objects simply vanish when occluded. These aren't just "bugs"; they are fundamental challenges in temporal consistency and physical reasoning.
 
@@ -20,7 +20,7 @@ Currently, the only solution is **Manual Quality Control (QC)**: a human sitting
 
 ### The Solution: The ADK Multi-Agent Shield
 
-We built the **Generative AI Video Evaluator** to automate this inspection process. Instead of asking one model to "find mistakes," we've deployed a specialized, **multi-agent ADK (Agentic Document Knowledge) architecture** powered by **Gemini 3.1 Pro**.
+We built the **Generative AI Video Evaluator** to automate this inspection process. Instead of asking one model to "find mistakes," we've deployed a specialized, **multi-agent ADK (Agentic Document Knowledge) architecture** powered by **Gemini 1.5 Pro**.
 
 By splitting the "Judge" into three distinct roles, we achieve human-level observation:
 
@@ -37,16 +37,16 @@ Unlike standard AI assistants that want to be "helpful," our agents are engineer
 
 Detecting a bug is only half the battle. The **Generative AI Video Evaluator** is an automated loop. When an agent identifies a critical issue—say, a "Hand clipping through table at 00:03"—the system triggers a **Prompt-to-Prompt Remediation**.
 
-1.  **Critique Analysis**: Gemini 3.1 Pro analyzes the "Origin Prompt" and the "Visual Flags." 
+1.  **Critique Analysis**: Gemini 1.5 Pro analyzes the "Origin Prompt" and the "Visual Flags." 
 2.  **Constraint Injection**: The system automatically synthesizes a high-density, corrective prompt. It doesn't just say "fix it"; it says: *"Regenerate the scene ensuring the hand maintained physical contact with the table surface without clipping."*
-3.  **Visual Anchoring**: The first frame of the original video is passed as a **STYLE Reference** to Google Veo 3.1, ensuring the "fixed" video looks identical to the original—minus the bug.
+3.  **Visual Anchoring**: The first frame of the original video is passed as a **STYLE Reference** to Google Veo, ensuring the "fixed" video looks identical to the original—minus the bug.
 4.  **Verification Pass**: The new video is automatically re-evaluated. If it passes, the loop finishes. If not, the "Judge" adds more detail and tries again.
 
 ---
 
 ### Precision at Scale: Pinpointing the Artifacts
 
-One of the most powerful features of **Gemini 3.1 Pro** in this context is its temporal precision. Unlike earlier models that gave vague feedback, our agents can identify the exact **start time** and **end time** of an artifact. 
+One of the most powerful features of **Gemini 1.5 Pro** in this context is its temporal precision. Unlike earlier models that gave vague feedback, our agents can identify the exact **start time** and **end time** of an artifact. 
 
 This metadata allows us to generate an **Issue Timeline** for creators, letting them jump directly to the "broken" parts of their video to understand the AI's reasoning.
 

@@ -154,7 +154,7 @@
                 graph TD
                     A[Video Input] --> B[Frame Extractor]
                     B --> C[ADK Agent Mesh]
-                    subgraph "ADK Agents (Gemini 3.1 Pro)"
+                    subgraph "ADK Agents (Gemini 1.5 Pro)"
                         C1[Physics Auditor]
                         C2[Object Permanence Indexer]
                         C3[Temporal Consistency Tracker]
@@ -167,7 +167,7 @@
                     C3 --> D
                     D -- "Flags detected" --> G[Remediation Engine]
                     G --> H[Prompt Vector Transformation]
-                    H --> I[Veo 3.1 Regeneration]
+                    H --> I[Veo Regeneration]
                     I --> A
                     D -- "No issues" --> F[Final Render Verified]
             </div>
@@ -182,7 +182,7 @@
 
         <section id="tokens">
             <h2>3. Multimodal Token Budgeting</h2>
-            <p>Connecting frames to **Gemini 3.1 Pro** requires balancing context size and inference latency. We use client-side downscaling: </p>
+            <p>Connecting frames to **Gemini 1.5 Pro** requires balancing context size and inference latency. We use client-side downscaling: </p>
             <pre><code>// src/lib/video-utils.ts
 const maxDim = 800; // Cap to 800px for optimal token weight
 const scale = Math.min(maxDim / videoWidth, maxDim / videoHeight, 1);</code></pre>
@@ -223,7 +223,7 @@ toolConfig: {
                 <li><strong>Audit</strong>: Physics Agent returns `At 00:03, hand clips table`.</li>
                 <li><strong>Stitch</strong>: The remediation pipeline maps this flag to the initial prompt.</li>
                 <li><strong>Rewrite</strong>: An optimizer agent in <code>remediation.ts</code> injects a negative constraint in the prompt structure: <code>"Ensure hand preserves depth layering and does not intersect the table geometry."</code></li>
-                <li><strong>Re-verify</strong>: The new output is rendered by <strong>Veo 3.1</strong> with a <code>STYLE</code> reference to the original, locking down aesthetic drift while correcting geometry.</li>
+                <li><strong>Re-verify</strong>: The new output is rendered by <strong>Google Veo</strong> with a <code>STYLE</code> reference to the original, locking down aesthetic drift while correcting geometry.</li>
             </ol>
 
             <h3>Code-Level Prompt Stitching</h3>

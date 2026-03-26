@@ -11,7 +11,7 @@ The **Generative AI Video Evaluator** is a high-fidelity quality assurance platf
 
 ### Visual Reasoning Pipeline (ADK Agents)
 - **Frame Extraction**: Sequential JPEG extraction via HTML5 Canvas.
-- **Agent Intelligence**: Parallel execution of specialized sub-agents powered by **Gemini 3.1 Pro**.
+- **Agent Intelligence**: Parallel execution of specialized sub-agents powered by **Gemini 1.5 Pro**.
 - **Agent Roles**: Object Permanence, Physics & Motion, Temporal Consistency.
 - **Precision**: Capability to detect exact **start** and **end** times of artifacts.
 
@@ -43,7 +43,7 @@ When the system detects a visual error (e.g., identity drift), it analyzes the o
 
 ### How it works:
 1.  **Map Failures**: Identified issues are mapped to the video timeline.
-2.  **Intent Preservation**: **Gemini 3.1 Pro** extracts the creative intent of the original prompt.
+2.  **Intent Preservation**: **Gemini 1.5 Pro** extracts the creative intent of the original prompt.
 3.  **Constraint Injection**: Specific corrective instructions (e.g., "Maintain hand identity through occlusion") are injected into the new prompt.
 4.  **Style Reference**: The original video composition is encoded as a STYLE reference for the Veo regeneration call.
 
