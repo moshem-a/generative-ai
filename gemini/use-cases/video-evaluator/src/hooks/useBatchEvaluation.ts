@@ -120,8 +120,8 @@ export function useBatchEvaluation() {
 
     setIsProcessing(true);
     try {
-      const genAI = new GoogleGenerativeAI(getStoredApiKey()!);
-      const model = genAI.getGenerativeModel({ model: getStoredModel() });
+      const ai = new GoogleGenerativeAI(getStoredApiKey()!);
+      const model = ai.getGenerativeModel({ model: getStoredModel() });
       
       const prompt = `You are an expert AI Prompt Engineer and Video Director Analyst.
       A user has generated a batch of AI videos that share several reality-check flaws.
@@ -156,8 +156,8 @@ export function useBatchEvaluation() {
 
     setIsProcessing(true);
     try {
-      const genAI = new GoogleGenerativeAI(getStoredApiKey()!);
-      const model = genAI.getGenerativeModel({ model: getStoredModel() });
+      const ai = new GoogleGenerativeAI(getStoredApiKey()!);
+      const model = ai.getGenerativeModel({ model: getStoredModel() });
       
       const prompt = `You are a universal Prompt Architect. 
       I have a batch of AI-generated videos that all share common severe flaws.
